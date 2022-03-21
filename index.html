@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/css.css">
+    <script src="js/js.js"></script>
+    <title>APLICACIÓN CORREDORES</title>
+</head>
+<body>
+    <form action="*" method="post">
+        <input type="text" name="nombre" id="nombre" placeholder="Introduce el nombre" onblur="validarNombre(this.value)">
+        <br><br>
+        <input type="email" name="email" id="email" placeholder="Introduce el email" onblur="validarEmail(this.value);">
+        <p>¿Ha corrido antes?</p>
+        <input type="radio" name="corre" id="si" value="Si" onchange="siHaCorrido();">
+        <label for="si">Si</label>
+        <input type="radio" name="corre" id="no" value="No" checked onchange="noHaCorrido();">
+        <label for="no">No</label>
+        <div id="campo_corredor"></div>
+        <br>
+        <input type="button" value="ENVIAR" onclick="alerta()">
+    </form>
+</body>
+</html>
